@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rental Service</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <!-- Booking Form Section -->
+    <section id="book-form" class="booking-section">
+        <h2>Book Your Ride</h2>
+        <form action="payment_page.php" method="POST" class="book-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="bike-type">Bike Available:</label>
+            <select id="bike-type" name="bike_type" required>
+                <!-- Road Bikes -->
+                <option value="yamaha-mt15">Yamaha MT 15 V2.0</option>
+                <option value="re-hunter-350">Royal Enfield Hunter 350</option>
+                <option value="re-classic-350">Royal Enfield Classic 350</option>
+                <option value="tvs-apache-rtr-160">TVS Apache RTR 160</option>
+                <option value="ktm-duke-390">KTM Duke 390</option>
+
+                <!-- Scooters -->
+                <option value="tvs-jupiter">TVS Jupiter</option>
+                <option value="ola-s1-pro">Ola S1 Pro</option>
+                <option value="yamaha-aerox-155">Yamaha Aerox 155</option>
+                <option value="vespa-vxl-125">Vespa VXL 125</option>
+
+                <!-- Electric Bikes -->
+                <option value="revolt-rv400">Revolt RV400</option>
+                <option value="oben-rorr">Oben Rorr</option>
+                <option value="ultraviolette-f77">Ultraviolette F77</option>
+                <option value="ola-roadster">Ola Roadster</option>
+                <option value="bmw-ce02">BMW CE 02</option>
+            </select>
+
+            <label for="rental-dates">Rental Dates:</label>
+            <input type="date" id="start-date" name="start_date" required>
+            <input type="date" id="end-date" name="end_date" required>
+
+            <button type="submit" class="btn">Proceed to Payment</button>
+        </form>
+    </section>
+</body>
+</html>
